@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  
+
+</head>
+<body>
+
+<header>
+  <p>Catilus, the magazine mingling science and science-fiction.</p>
+</header>
+
+<main>
+  <h1 id="title">Survey form for the next issue of <em>Catilus</em>
+  </h1>
+  
+  <p id="description"> We want to get to know you better and offer you better content in the next issue of <em>Catilus</em>. If you would like, please take a few minutes to fill in the following survey.</p>
+  
+  <form id="survey-form"> 
+    
+    <p> 
+      <label for="name" id="name-label"> Name:       
+      </label>
+      <input type="name" id="name" placeholder="Enter your name" pattern="[Aa-Zz]" required/>
+
+    </p>
+    
+    <p> 
+      <label for="email" id="email-label"> E-mail:       
+      </label>
+      <input type="email" id="email" placeholder="Enter your email" pattern=".+@.+..+"required/>
+    </p>
+    
+    <p> 
+      <label for="number" id="number-label"> Age:       
+      </label>
+        <input type="number" id="number" placeholder="Enter your age (optional)" min="1" max="150"/>
+ 
+    </p>
+    
+    <p> Sex: <select name="sex" id="dropdown">
+      <option value="Female">Female</option>
+      <option value="Male">Male</option>
+      <option value="Other">Other</option>
+    </select></p>
+    
+    <p> How did you like the previous issue? </br>
+      <input type="radio" name="likeness" value="great"/> 
+        A lot! </br>
+      <input type="radio" name="likeness" value="good"/> 
+        It was good. </br>
+      <input type="radio" name="likeness" value="alright"/> 
+        It was alright. </br>
+      <input type="radio" name="likeness" value="so-so"/> 
+        Not so much. </br> 
+      <input type="radio" name="likeness" value="nah"/> 
+        I didn't like it at all! </br>
+    </p>
+
+    <p> Which section(s) can we improve? </br>
+      <input type="checkbox" name="improvement" value="sci-fi book"/> 
+        Sci-fi book of the month </br>      
+      <input type="checkbox" name="improvement" value="research"/> 
+        Latest scientific research </br>
+      <input type="checkbox" name="improvement" value="tribute"/> 
+        Tribute page </br>
+      <input type="checkbox" name="improvement" value="author"/> 
+        Authors corner </br>
+      <input type="checkbox" name="improvement" value="artist"/> 
+        Artists corner </br>
+      <input type="checkbox" name="improvement" value="universe"/> 
+        Around the universe </br>
+    </p>
+    
+    <p> Let us know in the comments below how we can improve! </br> 
+      <textarea id="comments" rows=10, cols=50>
+      </textarea>
+    </p>
+   
+    <p>
+      <input type="submit" id="submit" value="Submit"/>
+    </p
+      
+    
+  </form>
+  
+</main>
+
+<footer>
+  <p>Catilus @ 2020</p>
+</footer>
+
+  
+</body>
+</html>
